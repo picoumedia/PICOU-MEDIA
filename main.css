@@ -25,6 +25,11 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 button:hover {
   background-color: black;
   color: white;
@@ -36,6 +41,7 @@ button:hover {
   font-family: "Barlow", sans-serif;
   letter-spacing: 0.2rem;
   margin: 5px 0;
+  animation: fadeIn 5s;
 }
 
 .title {
@@ -44,6 +50,7 @@ button:hover {
   letter-spacing: 0.2rem;
   font-family: "Roboto Condensed", sans-serif;
   margin: 0;
+  animation: fadeIn 4s;
 }
 
 .insta-link {
@@ -54,9 +61,25 @@ button:hover {
   font-size: 20.8px;
   font-family: "Roboto Condensed", sans-serif;
   margin-top: 10px;
+  animation: fadeIn 6.5s;
 }
 
 .hash {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20.8px;
+  animation: fadeIn 7s;
+}
+
+.contact-button {
+  animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
